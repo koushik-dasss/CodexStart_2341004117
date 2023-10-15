@@ -8,7 +8,7 @@ n=3 is as follows:
 3→10→5→16→8→4→2→1 '''
 
 # Taking input (1<=n<=10^6)
-num = int(input("Enter  integer: "))
+num = int(input())
 false = 0
 #Checking validity of the input
 if num < 1:
