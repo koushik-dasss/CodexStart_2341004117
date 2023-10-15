@@ -19,7 +19,7 @@ n.
 '''
 
 # Taking input (1<=n<=10^6)
-num = int(eval(input("Enter an integer: ")))
+num = int(input("Enter an integer: "))
 false = 0
 #Checking validity of the input
 if num < 1:
