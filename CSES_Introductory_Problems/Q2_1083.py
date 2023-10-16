@@ -1,15 +1,13 @@
 n = int(input())
-given_numbers =[]
 ctr =1
-while ctr<n:
-    number = int(input())
-    given_numbers.append(number)
-    ctr+=1
+given_numbers = list(map(int, input().split()))
     
-sum =0
-for i in given_numbers:
-    sum+=i
+new_sum = sum(given_numbers)
 
-expected_sum = n * (n + 1) // 2
-missing_number = expected_sum - sum
+total_sum = 0
+for i in range(1,n+1):
+    total_sum+=1
+
+missing_number = total_sum - new_sum
 print(missing_number)
+
