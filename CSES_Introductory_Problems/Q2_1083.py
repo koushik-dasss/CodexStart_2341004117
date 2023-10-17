@@ -1,13 +1,9 @@
 n = int(input())
-given_numbers =[]
-ctr =1
-while ctr<n:
-    number = int(input())
-    given_numbers.append(number)
-    ctr+=1
-
+for _ in range(n+1):
+	new=int(input())
+	s=list(map(int,input().split()))
 new_sum =0
-for i in given_numbers:
+for i in s:
     new_sum+=i
 total_sum = 0
 for i in range(1,n+1):
