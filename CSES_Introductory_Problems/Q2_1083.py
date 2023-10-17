@@ -1,10 +1,14 @@
 n = int(input())
-for _ in range(n+1):
-	new=int(input())
-	s=list(map(int,input().split()))
+list_numbers=[]
 new_sum =0
-for i in s:
+ctr =1
+while ctr<n:
+    number = int(input())
+    list_numbers.append(number)
+    ctr+=1
+for i in list_numbers:
     new_sum+=i
+
 total_sum = 0
 for i in range(1,n+1):
     total_sum+=i
